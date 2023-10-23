@@ -11,7 +11,7 @@ class MarketingController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth_access', ['except' => ['show']]);
+        $this->middleware('auth_access', ['except' => ['index']]);
     }
     public function index()
     {

@@ -6,137 +6,39 @@ import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
-    <footer className="container bg-gray-900">
-      <div
-        className="
-        container
-        flex flex-col flex-wrap
-        px-4
-        py-16
-        mx-auto
-        md:items-center
-        lg:items-start
-        md:flex-row md:flex-nowrap
-      "
-      >
-        <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-          <Link href={"/"} className="text-2xl text-white">
-            My Website
-          </Link>
-          <p className="mt-2 text-xs text-justify text-gray-400">
-            Footer is a valuable resource that complements the main content of
-            the website by providing quick links, legal information, and ways to
-            connect, creating a well-rounded and user-friendly experience for
-            visitors.
-          </p>
-          <div className="flex mt-4">
-            <Input type="email" placeholder="Email" />
-            <Button variant="destructive">Subscribe</Button>
-          </div>
-          <div className="flex justify-center mt-4 space-x-4 lg:mt-2">
-            <Link href={""}>
-              <Facebook className="text-blue-500" />
-            </Link>
-            <Link href={""}>
-              <Twitter className="text-sky-300" />
-            </Link>
-            <Link href={""}>
-              <Instagram className="text-pink-500" />
-            </Link>
-            <Link href={""}>
-              <Linkedin className="text-blue-400" />
-            </Link>
-          </div>
+
+    <div className="max-w-2xl mx-auto">
+      <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <a href="#" target="_blank" className="flex items-center mb-4 sm:mb-0">
+            <img src="https://flowbite.com/docs/images/logo.svg" className="mr-4 h-8" alt="Flowbite Logo" />
+            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          </a>
+          <ul className="flex flex-wrap items-center mb-6 sm:mb-0">
+            <li>
+              <a href="#" className="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">About</a>
+            </li>
+            <li>
+              <a href="#" className="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Privacy
+                Policy</a>
+            </li>
+            <li>
+              <a href="#" className="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Licensing</a>
+            </li>
+            <li>
+              <a href="#" className="text-sm text-gray-500 hover:underline dark:text-gray-400">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div className="justify-between w-full mt-4 text-center lg:flex">
-          <div className="w-full px-4 lg:w-1/3 md:w-1/2">
-            <h2 className="mb-2 font-bold tracking-widest text-gray-100">
-              Quick Links
-            </h2>
-            <ul className="mb-8 space-y-2 text-sm list-none">
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 1
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 2
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 3
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 4
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full px-4 lg:w-1/3 md:w-1/2">
-            <h2 className="mb-2 font-bold tracking-widest text-gray-100">
-              Quick Links
-            </h2>
-            <ul className="mb-8 space-y-2 text-sm list-none">
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 1
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 2
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 3
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 4
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full px-4 lg:w-1/3 md:w-1/2">
-            <h2 className="mb-2 font-bold tracking-widest text-gray-100">
-              Quick Links
-            </h2>
-            <ul className="mb-8 space-y-2 text-sm list-none">
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 1
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 2
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 3
-                </Link>
-              </li>
-              <li>
-                <Link href={"/"} className="text-gray-300">
-                  Link 4
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="flex justify-center -mt-12">
-        <p className="text-center text-white pb-2">
-          @2024 All rights reserved by your website.
-        </p>
-      </div>
-    </footer>
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com" target="_blank" className="hover:underline">Flowbite™</a>. All Rights Reserved.
+        </span>
+      </footer>
+      <p className="mt-5">This footer component is part of a larger, open-source library of Tailwind CSS components. Learn
+        more
+        by going to the official <a className="text-blue-600 hover:underline" href="#" target="_blank">Flowbite Documentation</a>.
+      </p>
+    </div>
+
   );
 }

@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
+ 
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -46,8 +45,8 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
  
-    --primary: 180 77% 34%; /* Ganti warna primary ke teal 600 (180 77% 34%) */
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
  
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -63,10 +62,9 @@
  
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 180 77% 34%; /* Ganti warna ring ke teal 600 (180 77% 34%) */
+    --ring: 240 4.9% 83.9%;
   }
 }
-
  
 @layer base {
   * {
